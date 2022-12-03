@@ -26,7 +26,7 @@ cron.schedule(`*/30 * * * * *`, async () => {
   ).toString();
   console.log('code', code);
   const tx = await SecurusContract.changeOTP(code);
-  console.log(tx);
+  console.log(tx.hash);
 });
 function genCode(seed: string) {
   // console.log("called");
