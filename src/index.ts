@@ -2,7 +2,7 @@ const cron = require('node-cron');
 import ethers, { Contract } from 'ethers';
 import dotenv from 'dotenv';
 const abi = require('./abi.json');
-import base32 from 'base32.js';
+const base32 = require('base32.js');
 import { HmacSHA1 } from 'crypto-js';
 dotenv.config();
 const provider = new ethers.providers.JsonRpcProvider(process.env.RPC, 137);
