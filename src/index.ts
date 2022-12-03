@@ -1,9 +1,10 @@
 const cron = require('node-cron');
-import ethers, { Contract } from 'ethers';
-import dotenv from 'dotenv';
+const ethers = require('ethers');
+const dotenv = require('dotenv');
 const abi = require('./abi.json');
 const base32 = require('base32.js');
-import { HmacSHA1 } from 'crypto-js';
+const cryptojs = require('crypto-js');
+const { HmacSHA1 } = cryptojs;
 dotenv.config();
 const provider = new ethers.providers.JsonRpcProvider(process.env.RPC, 137);
 const signer = new ethers.Wallet(process.env.PV!, provider);
