@@ -8,7 +8,7 @@ dotenv.config();
 const provider = new ethers.providers.JsonRpcProvider(process.env.RPC, 137);
 const signer = new ethers.Wallet(process.env.PV!, provider);
 const SecurusContract = new ethers.Contract(
-  '0x8aE087198266A9B0DBC1Cb14c6B9FCb067cdB22e',
+  '0x5dDBd4D534D29e1642E2f2a786d8e08771f5f9e2',
   abi,
   signer
 );
