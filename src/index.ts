@@ -1,5 +1,7 @@
 const cron = require('node-cron');
 // import { ethers } from 'ethers';
+const express = require('express'); // Adding Express
+const app = express();
 const ethers = require('ethers');
 const dotenv = require('dotenv');
 const abi = require('./abi.json');
@@ -46,3 +48,13 @@ function genCode(seed: string) {
   // console.log("client: ", time, " ", hash.toString(), " ", code % 1000000);
   return code % 1000000;
 }
+app.post('/otp', async (req: any, res: any) => {
+  const code = HmacSHA1(
+    String(genCode(process.env.USER_SEED!)),
+    process.env.SEED!
+  ).toString();
+  res.status(200).json({ otp: code });
+});
+app.listen(process.env.PORT || 3000, function () {
+  console.log(`Running on port 3000.`);
+});
