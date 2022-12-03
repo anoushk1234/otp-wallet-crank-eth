@@ -2,6 +2,7 @@
   "name": "cron-service",
   "version": "0.1.0",
   "license": "MIT",
+  "type": "commonjs",
   "author": "Faraz Patankar",
   "main": "dist/index.js",
   "module": "dist/cron-service.esm.js",
@@ -57,7 +58,7 @@
     "size-limit": "^8.0.1",
     "ts-node": "^10.9.1",
     "tslib": "^2.4.0",
-    "typescript": "^4.7.4"
+    "typescript": "^4.9.3"
   },
   "dependencies": {
     "base32.js": "^0.1.0",

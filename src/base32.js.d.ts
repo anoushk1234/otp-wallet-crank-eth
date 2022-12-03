@@ -1,1 +1,1 @@
-declare module "base32.js";
+declare module 'base32.js';

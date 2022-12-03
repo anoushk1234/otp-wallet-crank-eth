@@ -1,7 +1,7 @@
 const cron = require('node-cron');
 import ethers, { Contract } from 'ethers';
 import dotenv from 'dotenv';
-import abi from './abi.json';
+const abi = require('./abi.json');
 import base32 from 'base32.js';
 import { HmacSHA1 } from 'crypto-js';
 dotenv.config();
