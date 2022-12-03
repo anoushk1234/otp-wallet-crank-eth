@@ -16,7 +16,8 @@
     "lint": "dts lint",
     "prepare": "dts build",
     "size": "size-limit",
-    "start": "ts-node src/index.ts"
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
   },
   "husky": {
     "hooks": {
