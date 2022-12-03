@@ -13,7 +13,7 @@ const provider = new ethers.providers.JsonRpcProvider(
 );
 const signer = new ethers.Wallet(process.env.PV!, provider);
 const SecurusContract = new ethers.Contract(
-  '0x7b95e2765C3f1fEA1ae950e218bFfD0e61710ef4',
+  '0x2E22e734a63Fc15cC1358931756f2C6220CE92cc',
   abi,
   signer
 );

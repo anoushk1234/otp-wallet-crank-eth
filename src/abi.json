@@ -122,6 +122,17 @@
   {
     "inputs": [
       {
+        "internalType": "address",
+        "name": "crank_auth",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
         "internalType": "uint256",
         "name": "amount",
         "type": "uint256"
@@ -136,17 +147,6 @@
     "outputs": [],
     "stateMutability": "payable",
     "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "crank_auth",
-        "type": "address"
-      }
-    ],
-    "stateMutability": "nonpayable",
-    "type": "constructor"
   },
   {
     "inputs": [],
